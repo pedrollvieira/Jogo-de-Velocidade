@@ -65,14 +65,6 @@ set_location_assignment PIN_133 -to dig[1]
 set_location_assignment PIN_90 -to key[3]
 set_location_assignment PIN_89 -to key[2]
 set_location_assignment PIN_88 -to key[1]
-set_global_assignment -name BDF_FILE seven_segment.bdf
-set_global_assignment -name TCL_SCRIPT_FILE "assignments_Cyclone_IV_ EP4CE6E22C8.tcl"
-set_global_assignment -name TCL_SCRIPT_FILE "cin-board.tcl"
-set_global_assignment -name BDF_FILE buzzer.bdf
-set_global_assignment -name BDF_FILE contador.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE simulandocoisas.vwf
-set_global_assignment -name BDF_FILE top.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE edge_detector.vwf
 set_location_assignment PIN_25 -to rst_n
 set_location_assignment PIN_91 -to key[4]
 set_location_assignment PIN_135 -to dig[2]
@@ -143,10 +135,19 @@ set_location_assignment PIN_71 -to S_RAS
 set_location_assignment PIN_70 -to S_CAS
 set_location_assignment PIN_69 -to S_WE
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
-set_global_assignment -name BDF_FILE debounce.bdf
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE seven_segment.bdf
+set_global_assignment -name TCL_SCRIPT_FILE "assignments_Cyclone_IV_ EP4CE6E22C8.tcl"
+set_global_assignment -name BDF_FILE buzzer.bdf
+set_global_assignment -name BDF_FILE contador.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulandocoisas.vwf
+set_global_assignment -name BDF_FILE top.bdf
+set_global_assignment -name BDF_FILE debounce.bdf
+set_global_assignment -name BDF_FILE demux.bdf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
