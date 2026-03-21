@@ -1,13 +1,13 @@
 # Quartus folders
-.qsys_edit/*
-db/*
-incremental_db/*
-output_files/*
-simulation/*
+src/.qsys_edit/*
+src/db/*
+src/incremental_db/*
+src/output_files/*
+src/simulation/*
 
 # Documentation
 docs/*
 
-*.qws
+src/*.qws
 
-cin-board.tcl
+src/cin-board.tcl
