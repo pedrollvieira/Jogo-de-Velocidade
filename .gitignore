@@ -9,3 +9,5 @@ simulation/*
 docs/*
 
 *.qws
+
+cin-board.tcl
