@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 384 208 552 224)
+	(rect 320 208 488 224)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
 	(text "botao" (rect 5 0 34 11)(font "Arial" ))
 	(pt 168 8)
@@ -39,9 +39,25 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 384 240 552 256)
+	(rect 320 240 488 256)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "clock_in" (rect 5 0 47 11)(font "Arial" ))
+	(text "clock_in" (rect 5 0 46 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 320 168 488 184)
+	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
+	(text "enable" (rect 5 0 40 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -281,6 +297,37 @@ https://fpgasoftware.intel.com/eula.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 504 200 552 232)
+	(text "TRI" (rect 1 0 17 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 21 21 32)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 24 0)
+		(input)
+		(text "OE" (rect 26 0 41 11)(font "Courier New" (bold))(invisible))
+		(text "OE" (rect 26 0 41 11)(font "Courier New" (bold))(invisible))
+		(line (pt 24 12)(pt 24 0))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+		(line (pt 14 7)(pt 32 16))
+	)
+)
 (connector
 	(pt 704 248)
 	(pt 696 248)
@@ -354,10 +401,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 608 216)
 )
 (connector
-	(pt 552 216)
-	(pt 560 216)
-)
-(connector
 	(pt 688 232)
 	(pt 696 232)
 )
@@ -386,12 +429,28 @@ https://fpgasoftware.intel.com/eula.
 	(pt 952 208)
 )
 (connector
-	(pt 552 248)
+	(pt 608 248)
+	(pt 624 248)
+)
+(connector
+	(pt 488 248)
 	(pt 608 248)
 )
 (connector
-	(pt 608 248)
-	(pt 624 248)
+	(pt 552 216)
+	(pt 560 216)
+)
+(connector
+	(pt 488 216)
+	(pt 504 216)
+)
+(connector
+	(pt 528 200)
+	(pt 528 176)
+)
+(connector
+	(pt 528 176)
+	(pt 488 176)
 )
 (junction (pt 696 232))
 (junction (pt 736 320))

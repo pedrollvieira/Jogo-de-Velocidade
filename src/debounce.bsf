@@ -27,16 +27,23 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 32)
 		(input)
-		(text "botao" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
-		(text "botao" (rect 21 27 56 42)(font "Intel Clear" (font_size 8)))
+		(text "enable" (rect 0 0 40 15)(font "Intel Clear" (font_size 8)))
+		(text "enable" (rect 21 27 61 42)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "clock_in" (rect 0 0 48 15)(font "Intel Clear" (font_size 8)))
-		(text "clock_in" (rect 21 43 69 58)(font "Intel Clear" (font_size 8)))
+		(text "botao" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "botao" (rect 21 43 56 58)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock_in" (rect 0 0 48 15)(font "Intel Clear" (font_size 8)))
+		(text "clock_in" (rect 21 59 69 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 136 32)

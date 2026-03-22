@@ -21,31 +21,24 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 152 112)
+	(rect 16 16 184 112)
 	(text "demux" (rect 5 0 46 15)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 79 28 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "A" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "A" (rect 21 27 30 42)(font "Intel Clear" (font_size 8)))
+		(text "clk_in" (rect 0 0 34 15)(font "Intel Clear" (font_size 8)))
+		(text "clk_in" (rect 21 27 55 42)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "B" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "B" (rect 21 43 30 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 136 32)
+		(pt 168 32)
 		(output)
 		(text "D_OUT[3 .. 0]" (rect 0 0 76 15)(font "Intel Clear" (font_size 8)))
-		(text "D_OUT[3 .. 0]" (rect 39 27 115 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 136 32)(pt 120 32)(line_width 3))
+		(text "D_OUT[3 .. 0]" (rect 71 27 147 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 120 80))
+		(rectangle (rect 16 16 152 80))
 	)
 )

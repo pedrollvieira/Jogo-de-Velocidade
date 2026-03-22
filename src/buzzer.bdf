@@ -22,26 +22,9 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 192 152 360 168)
-	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "clock" (rect 5 0 32 11)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 136 152 192 168))
-)
-(pin
-	(input)
 	(rect 824 88 992 104)
 	(text "INPUT" (rect 14 6 43 16)(font "Arial" (font_size 6)))
-	(text "key[0]" (rect 111 5 140 16)(font "Arial" ))
+	(text "som1_in" (rect 111 5 154 16)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 84 4)(pt 59 4))
@@ -59,7 +42,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 832 360 1000 376)
 	(text "INPUT" (rect 14 6 43 16)(font "Arial" (font_size 6)))
-	(text "key[1]" (rect 111 5 144 18)(font "Intel Clear" ))
+	(text "som2_in" (rect 111 5 153 18)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 84 4)(pt 59 4))
@@ -77,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 832 592 1000 608)
 	(text "INPUT" (rect 14 6 43 16)(font "Arial" (font_size 6)))
-	(text "key[2]" (rect 111 5 144 18)(font "Intel Clear" ))
+	(text "som3_in" (rect 111 5 153 18)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 84 4)(pt 59 4))
@@ -95,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 832 816 1000 832)
 	(text "INPUT" (rect 14 6 43 16)(font "Arial" (font_size 6)))
-	(text "key[3]" (rect 111 5 144 18)(font "Intel Clear" ))
+	(text "som4_in" (rect 111 5 153 18)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 84 4)(pt 59 4))
@@ -110,10 +93,27 @@ https://fpgasoftware.intel.com/eula.
 	(annotation_block (location)(rect 1000 816 1064 840))
 )
 (pin
+	(input)
+	(rect 192 152 360 168)
+	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
+	(text "clk_in" (rect 5 0 35 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 136 152 192 168))
+)
+(pin
 	(output)
 	(rect 824 136 1000 152)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "led[0]" (rect 90 0 117 11)(font "Arial" ))
+	(text "som1_out" (rect 90 0 139 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -130,7 +130,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 832 392 1008 408)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "led[1]" (rect 90 0 121 13)(font "Intel Clear" ))
+	(text "som2_out" (rect 90 0 141 13)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -147,7 +147,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 832 624 1008 640)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "led[2]" (rect 90 0 121 13)(font "Intel Clear" ))
+	(text "som3_out" (rect 90 0 141 13)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -164,7 +164,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 832 848 1008 864)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "led[3]" (rect 90 0 121 13)(font "Intel Clear" ))
+	(text "som4_out" (rect 90 0 141 13)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
